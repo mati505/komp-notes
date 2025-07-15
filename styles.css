@@ -1,0 +1,72 @@
+body {
+  background-color: #ffffff; 
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 1.5rem 2rem;
+}
+
+a {
+  color: #007ACC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00AA88;
+}
+
+h1,h2{
+  margin: 0;
+  color: #0b3d91;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+.lesson-container {
+  width: 400px;
+  margin: 1rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Inter', sans-serif;
+  border: #007ACC 2px solid;
+  background-color: #007ACC;
+}
+
+.lesson-btn {
+  width: 100%;
+  background-color: #007ACC;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px 10px 0 0;
+ 
+  transition: background-color 0.3s ease;
+}
+
+.lesson-btn:hover {
+  background-color: #005A9E;
+  
+}
+
+.lesson-info {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f0f8ff;
+  color: #222;
+  padding: 0 1rem;
+  transition: max-height 0.4s ease;
+  font-size: 0.95rem;
+  
+}
+
+/* When hovering on the container, expand the lesson-info */
+.lesson-container:hover .lesson-info {
+  max-height: 200px; /* enough to show content */
+  padding: 1rem;
+}
